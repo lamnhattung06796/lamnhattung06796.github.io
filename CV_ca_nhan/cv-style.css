@@ -1,0 +1,141 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.5;
+    padding: 30px 0;
+}
+
+/* Khung tổng thể CV (Chia flex 2 cột: 40% - 60%) */
+.cv-container {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- CỘT TRÁI (40%) --- */
+.cv-left {
+    width: 40%;
+    background-color: #2b3e50; /* Màu nền tối giống mẫu sách */
+    color: #fff;
+    padding: 30px 20px;
+}
+
+/* Ảnh đại diện */
+.avatar-box {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.avatar-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    background-color: #ccc;
+}
+
+/* Tiêu đề các mục bên trái */
+.cv-left h3 {
+    font-size: 16px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.cv-left .cv-section {
+    margin-bottom: 25px;
+}
+
+.cv-left p, .cv-left li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #d1d8e0;
+}
+
+/* Thanh kỹ năng (Skills progress bar) */
+.skill-item {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #4b6584;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #4cd137; /* Màu thanh kỹ năng */
+}
+
+/* --- CỘT PHẢI (60%) --- */
+.cv-right {
+    width: 60%;
+    padding: 40px 30px;
+}
+
+/* Tên và chức danh */
+.header-name {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #2b3e50;
+    padding-bottom: 15px;
+}
+
+.header-name h1 {
+    font-size: 26px;
+    color: #2b3e50;
+    letter-spacing: 1px;
+}
+
+.header-name h2 {
+    font-size: 14px;
+    color: #718093;
+    margin-top: 5px;
+}
+
+/* Tiêu đề các mục bên phải */
+.cv-right .cv-section {
+    margin-bottom: 25px;
+}
+
+.cv-right h3 {
+    font-size: 16px;
+    color: #2b3e50;
+    border-bottom: 1px solid #dcdde1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Mục nội dung chi tiết (Education / Experience) */
+.timeline-item {
+    margin-bottom: 15px;
+}
+
+.timeline-item h4 {
+    font-size: 13px;
+    color: #2f3640;
+    margin-bottom: 4px;
+}
+
+.timeline-item p {
+    font-size: 12px;
+    color: #57606f;
+    text-align: justify;
+}
